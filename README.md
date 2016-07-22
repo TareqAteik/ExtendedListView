@@ -7,24 +7,24 @@ So I created a simple control that add this feature (and the “more data on dem
 
 To use this feature you need to set the `IsPullToRefreshEnabled` to true, and register the event `PullToRefreshRequested`:
 
-    <ctrl:ExtendedListView x:Name="listView" PullToRefreshRequested="listView_PullToRefreshRequested" IsPullToRefreshEnabled="True" />
+    <ctrl:FMExtendedListView x:Name="listView" PullToRefreshRequested="listView_PullToRefreshRequested" IsPullToRefreshEnabled="True" />
 
 You can edit these templates and use your own by changing the templates `PullToRefreshPartTemplate` and `LoadingPartTemplate`:
 
 ```
-<ctrl:ExtendedListView.PullToRefreshPartTemplate>
+<ctrl:FMExtendedListView.PullToRefreshPartTemplate>
     <DataTemplate>
         <TextBlock Text="Keep scrolling" Margin="25,0" FontSize="25" VerticalAlignment="Center" />
     </DataTemplate>
-</ctrl:ExtendedListView.PullToRefreshPartTemplate>
-<ctrl:ExtendedListView.LoadingPartTemplate>
+</ctrl:FMExtendedListView.PullToRefreshPartTemplate>
+<ctrl:FMExtendedListView.LoadingPartTemplate>
     <DataTemplate>
         <StackPanel Orientation="Horizontal">
             <ProgressRing IsActive="True" VerticalAlignment="Center" />
             <TextBlock Text="Downloading ..." Margin="25,0" FontSize="25" VerticalAlignment="Center" />
         </StackPanel>
     </DataTemplate>
-</ctrl:ExtendedListView.LoadingPartTemplate>
+</ctrl:FMExtendedListView.LoadingPartTemplate>
 ```
 
 
@@ -34,7 +34,7 @@ Another feature that’s missing in the ListView control is to continue loading 
 
 To use this feature, you will need to set the `IsMoreDataRequestedEnabled` to True, and register the `MoreDataRequested` event:
 
-    <ctrl:ExtendedListView x:Name="listView" IsMoreDataRequestedEnabled="True" MoreDataRequested="listView_MoreDataRequested" />
+    <ctrl:FMExtendedListView x:Name="listView" IsMoreDataRequestedEnabled="True" MoreDataRequested="listView_MoreDataRequested" />
 
 By default, you will see a progress bar running in the bottom of the control:
 
@@ -43,28 +43,28 @@ By default, you will see a progress bar running in the bottom of the control:
 This part can be customized by changing the `MoreDataProgressTemplate` template:
 
 ```
-<ctrl:ExtendedListView.MoreDataProgressTemplate>
+<ctrl:FMExtendedListView.MoreDataProgressTemplate>
   <DataTemplate>
     <TextBlock Text="Loading more data" Margin="25,0" FontSize="25" />
   </DataTemplate>
-</ctrl:ExtendedListView.MoreDataProgressTemplate>
+</ctrl:FMExtendedListView.MoreDataProgressTemplate>
 ```
 
 ### Set when the load on demand should be performed
 
 You can set when the load of more items should be perform by setting `ScrollProgressToRequestMoreData` to a value of type `double` bigger than 0 and smaller or equal to 1 (`0.0 < value <= 1.0`):
 
-    <ctrl:ExtendedListView x:Name="listView" IsMoreDataRequestedEnabled="True" MoreDataRequested="listView_MoreDataRequested" ScrollProgressToRequestMoreData="0.6" />
+    <ctrl:FMExtendedListView x:Name="listView" IsMoreDataRequestedEnabled="True" MoreDataRequested="listView_MoreDataRequested" ScrollProgressToRequestMoreData="0.6" />
 For this to work `IsMoreDataRequestedEnabled` must be set to `true`. This value is used to calculate when the load should be done, so if you set 0.6 the load will be done when the user scrolls 60% of the screen. **This value defaults to 1.0 if not setted.**
 
 
 
 ## Nuget Package
 
-You can find the control by searching for “[ExtendedListView](https://www.nuget.org/packages/ExtendedListView)” on Nuget, or by typing the following command in the Nuget console:
+You can find the control by searching for “[FMExtendedListView](https://www.nuget.org/packages/FMExtendedListView)” on Nuget, or by typing the following command in the Nuget console:
 
-    Install-Package ExtendedListview
+    Install-Package FMExtendedListView
 
 You’re free to use this control for any free or commercial project
 
-Please reach me for any feature request (or bugs report) on Twitter [@TareqAteik](https://twitter.com/TareqAteik)
+Feel free to open an Issue if you are having any trouble or want to suggest a feature!
