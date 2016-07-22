@@ -3,7 +3,7 @@
   <Identity Name="5c9b7da5-4c97-4e22-8c26-80e29f4a54d6" Publisher="CN=Tareq" Version="1.0.0.0" />
   <mp:PhoneIdentity PhoneProductId="5c9b7da5-4c97-4e22-8c26-80e29f4a54d6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>ExtendedListView.Universal.WindowsPhone</DisplayName>
+    <DisplayName>FMExtendedListView.Universal.WindowsPhone</DisplayName>
     <PublisherDisplayName>Tareq</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -15,8 +15,8 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="ExtendedListView.Universal.WindowsPhone.App">
-      <m3:VisualElements DisplayName="ExtendedListView.Universal.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="ExtendedListView.Universal.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="FMExtendedListView.Universal.WindowsPhone.App">
+      <m3:VisualElements DisplayName="FMExtendedListView.Universal.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="FMExtendedListView.Universal.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
         </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />

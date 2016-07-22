@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FMExtendedListView", "FMExtendedListView\FMExtendedListView.csproj", "{F49E3575-B935-4A71-AA0F-7E1B848FC9D7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExtendedListView.Universal", "ExtendedListView.Universal", "{5597358A-DC3E-4568-95EA-5BBEEE62D035}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FMExtendedListView.Universal", "FMExtendedListView.Universal", "{5597358A-DC3E-4568-95EA-5BBEEE62D035}"
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "FMExtendedListView.Universal.Shared", "FMExtendedListView.Universal\FMExtendedListView.Universal.Shared\FMExtendedListView.Universal.Shared.shproj", "{3EA65F6C-1CB2-4BD5-B7E7-60742E2B43B5}"
 EndProject
