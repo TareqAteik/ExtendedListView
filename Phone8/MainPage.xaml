@@ -6,14 +6,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    xmlns:extended="using:ExtendedListView"
+    xmlns:extended="using:FMExtendedListView"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
         <Pivot>
             <PivotItem>
-                <extended:ExtendedListView x:Name="sv" VerticalAlignment="Top" SelectionMode="Single" IsSwipeEnabled="True" IsPullToRefreshEnabled="True" PullToRefreshRequested="listView_PullToRefreshRequested" MoreDataRequested="listView_MoreDataRequested" SelectionChanged="listv_SelectionChanged" IsMoreDataRequestedEnabled="True">
-                    <extended:ExtendedListView.ItemTemplate>
+                <extended:FMExtendedListView x:Name="sv" VerticalAlignment="Top" SelectionMode="Single" IsSwipeEnabled="True" IsPullToRefreshEnabled="True" PullToRefreshRequested="listView_PullToRefreshRequested" MoreDataRequested="listView_MoreDataRequested" SelectionChanged="listv_SelectionChanged" IsMoreDataRequestedEnabled="True">
+                    <extended:FMExtendedListView.ItemTemplate>
                         <DataTemplate>
                             <Grid Margin="0,5">
                                 <Grid.ColumnDefinitions>
@@ -29,13 +29,13 @@
                                 </StackPanel>
                             </Grid>
                         </DataTemplate>
-                    </extended:ExtendedListView.ItemTemplate>
-                </extended:ExtendedListView>
+                    </extended:FMExtendedListView.ItemTemplate>
+                </extended:FMExtendedListView>
 
             </PivotItem>
             <PivotItem>
-                <extended:ExtendedListView x:Name="sv2" SelectionMode="Single" IsSwipeEnabled="True" IsPullToRefreshEnabled="True" PullToRefreshRequested="listView_PullToRefreshRequested" MoreDataRequested="listView_MoreDataRequested" SelectionChanged="listv_SelectionChanged" IsMoreDataRequestedEnabled="True">
-                    <extended:ExtendedListView.ItemTemplate>
+                <extended:FMExtendedListView x:Name="sv2" SelectionMode="Single" IsSwipeEnabled="True" IsPullToRefreshEnabled="True" PullToRefreshRequested="listView_PullToRefreshRequested" MoreDataRequested="listView_MoreDataRequested" SelectionChanged="listv_SelectionChanged" IsMoreDataRequestedEnabled="True">
+                    <extended:FMExtendedListView.ItemTemplate>
                         <DataTemplate>
                             <Grid Margin="0,5">
                                 <Grid.ColumnDefinitions>
@@ -52,8 +52,8 @@
                                 </StackPanel>
                             </Grid>
                         </DataTemplate>
-                    </extended:ExtendedListView.ItemTemplate>
-                </extended:ExtendedListView>
+                    </extended:FMExtendedListView.ItemTemplate>
+                </extended:FMExtendedListView>
 
             </PivotItem>
         </Pivot>
