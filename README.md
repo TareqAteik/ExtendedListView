@@ -55,7 +55,7 @@ This part can be customized by changing the `MoreDataProgressTemplate` template:
 You can set when the load of more items should be perform by setting `ScrollProgressToRequestMoreData` to a value of type `double` bigger than 0 and smaller or equal to 1 (`0.0 < value <= 1.0`):
 
     <ctrl:ExtendedListView x:Name="listView" IsMoreDataRequestedEnabled="True" MoreDataRequested="listView_MoreDataRequested" ScrollProgressToRequestMoreData="0.6" />
-For this to work `IsMoreDataRequestedEnabled` must be set to `true`. This value is used to calculate when the load should be done, so if you set 0.6 the load will be done when the user scrolls 60% of the screen.
+For this to work `IsMoreDataRequestedEnabled` must be set to `true`. This value is used to calculate when the load should be done, so if you set 0.6 the load will be done when the user scrolls 60% of the screen. **This value defaults to 1.0 if not setted.**
 
 
 
