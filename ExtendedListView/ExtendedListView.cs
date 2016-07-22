@@ -78,6 +78,14 @@ namespace ExtendedListView
         public static readonly DependencyProperty IsMoreDataRequestedEnabledProperty =
             DependencyProperty.RegisterAttached("IsMoreDataRequestedEnabled", typeof(bool), typeof(ExtendedListView), new PropertyMetadata(false));
 
+        public double ScrollProgressToRequestMoreData
+        {
+            get { return (double)GetValue(ExtendedListView.ScrollProgressToRequestMoreDataProperty); }
+            set { SetValue(ExtendedListView.ScrollProgressToRequestMoreDataProperty, value); }
+        }
+
+        public static readonly DependencyProperty ScrollProgressToRequestMoreDataProperty =
+    DependencyProperty.RegisterAttached("ScrollProgressToRequestMoreData", typeof(double), typeof(ExtendedListView), new PropertyMetadata(false));
 
 
         public DataTemplate LoadingPartTemplate
@@ -249,7 +257,7 @@ namespace ExtendedListView
 
         private ScrollViewer scrollViewer;
         bool _isPullRefresh = false;
-        FrameworkElement refreshPart, loading, pullToRefresh, container, text, moreDataProgressBar;
+        FrameworkElement refreshPart, loading, pullToRefresh, container, moreDataProgressBar;
         //ScrollViewer listScrollViewer;
         //ItemsPresenter list;
         ListView listView;
@@ -448,7 +456,16 @@ namespace ExtendedListView
                 if (IsMoreDataRequestedEnabled)
                     if (!ea.IsIntermediate)
                     {
-                        if (listViewScollViewer.VerticalOffset == listViewScollViewer.ScrollableHeight)
+                        double progressToScroll = 1.0;
+                        bool ScrollProgressToRequestMoreDataIsSet = ReadLocalValue(ScrollProgressToRequestMoreDataProperty) != DependencyProperty.UnsetValue;
+
+                        if (ScrollProgressToRequestMoreDataIsSet)
+                        {
+                            progressToScroll = ScrollProgressToRequestMoreData;
+                        }
+
+                        double progress = listViewScollViewer.VerticalOffset / listViewScollViewer.ScrollableHeight;
+                        if (progress >= progressToScroll)
                         {
                             if (MoreDataRequested != null)
                             {
