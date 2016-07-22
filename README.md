@@ -63,8 +63,8 @@ For this to work `IsMoreDataRequestedEnabled` must be set to `true`. This value 
 
 You can find the control by searching for “[ExtendedListView](https://www.nuget.org/packages/ExtendedListView)” on Nuget, or by typing the following command in the Nuget console:
 
-    Install-Package ExtendedListview
+    Install-Package FMExtendedListView
 
 You’re free to use this control for any free or commercial project
 
-Please reach me for any feature request (or bugs report) on Twitter [@TareqAteik](https://twitter.com/TareqAteik)
+Feel free to open an Issue if you are having any trouble or want to suggest a feature!
