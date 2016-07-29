@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="31760ad3-4e89-4db5-a905-88e7ca97707d" Publisher="CN=Tareq" Version="1.0.0.0" />
-  <mp:PhoneIdentity PhoneProductId="31760ad3-4e89-4db5-a905-88e7ca97707d" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Identity Name="5c9b7da5-4c97-4e22-8c26-80e29f4a54d6" Publisher="CN=Tareq" Version="1.0.0.0" />
+  <mp:PhoneIdentity PhoneProductId="5c9b7da5-4c97-4e22-8c26-80e29f4a54d6" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>Phone8</DisplayName>
-    <PublisherDisplayName>FM</PublisherDisplayName>
+    <DisplayName>FMExtendedListView.Universal.WindowsPhone</DisplayName>
+    <PublisherDisplayName>Tareq</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,8 +15,8 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Phone8.App">
-      <m3:VisualElements DisplayName="Phone8" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Phone8" ForegroundText="light" BackgroundColor="transparent">
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="FMExtendedListView.Universal.WindowsPhone.App">
+      <m3:VisualElements DisplayName="FMExtendedListView.Universal.WindowsPhone" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="FMExtendedListView.Universal.WindowsPhone" ForegroundText="light" BackgroundColor="transparent">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
         </m3:DefaultTile>
         <m3:SplashScreen Image="Assets\SplashScreen.png" />
